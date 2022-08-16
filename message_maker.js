@@ -1,10 +1,10 @@
 // Helpful Action Array
 const helpfulActionCenter = ['Smile at 5 people',
-                             `Write down 5 things you're grateful for in a gratitude journal`,
-                             `Compliment 5 people on whatever you'd like`,
-                             `Call a loved one and see how their day is going`,
-                             `Tell a loved one how you feel about them`,
-                             `If the weather permits, take a walk outside. Otherwise, find a simple cleaning/organizing project you can do indoors.`]
+                             `write down 5 things you're grateful for in a gratitude journal`,
+                             `compliment 5 people on whatever you'd like`,
+                             `call a loved one and see how their day is going`,
+                             `tell a loved one how you feel about them`,
+                             `if the weather permits, take a walk outside. Otherwise, find a simple cleaning/organizing project you can do indoors.`]
 
 // Happy Message Array
 const happyMessageCenter = ['Today is your day!',
@@ -28,9 +28,11 @@ const linePicker = (arr) => {
 
 // Function to compile the 3 data pieces to make the message
 const goodDayMessage = () => {
-    console.log(`Something you can do to boost your mood and people around you is "${linePicker(helpfulActionCenter)}"`);
-    console.log(`Your helpful, uplifting quote of the day is "${linePicker(happyMessageCenter)}"`);
-    console.log(`Your lucky number to keep an eye out for today is, ${randomNumGen()}`);
+    console.log(`Here are a few things to help your day go better! 
+    First, something you can do to boost your mood is to ${linePicker(helpfulActionCenter)}.
+    An uplifting message to think about is "${linePicker(happyMessageCenter)}".
+    Finally, your lucky number to keep an eye out for today is ${randomNumGen()}. 
+    Use these to make your day that much better!`)
 };
 
 goodDayMessage();
