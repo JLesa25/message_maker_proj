@@ -1,25 +1,36 @@
-// Sarcastic Message Array
-const sarcasticMessageCenter = [`Sometimes life gives you lemons, whatever it gave you this time seems worse`,
-                       `Today is the day, probably not a good one but, you know... it's the day still.`,
-                       `The fact that you're looking for this probably means it isn't going all that well.`,
-                        `Good luck! You for sure need it`,
-                        `Well, I don't know that you can do it, but it'd be super cool if you did`,
-                        `When the going gets tough, we'll see how you do.`]
+// Helpful Action Array
+const helpfulActionCenter = ['Smile at 5 people',
+                             `Write down 5 things you're grateful for in a gratitude journal`,
+                             `Compliment 5 people on whatever you'd like`,
+                             `Call a loved one and see how their day is going`,
+                             `Tell a loved one how you feel about them`,
+                             `If the weather permits, take a walk outside. Otherwise, find a simple cleaning/organizing project you can do indoors.`]
 
 // Happy Message Array
 const happyMessageCenter = ['Today is your day!',
                             `You can do anything you set your mind to!`,
-                            `Let this be what your sign to go face the day. You've got this`,
+                            `Let this be your sign to go face the day. You've got this`,
                             `You're more than capable of doing the hard things!`,
                             `You're too boss to let something stop you today!`,
                             `Keep your head high, otherwise your crown will fall`]
 
-// Function to bring out a random message
+
+// Lucky Number Generator
+ const randomNumGen = () => {
+    return Math.floor(Math.random() * 100)
+ };
+
+// Function to bring out a random message from the arrays
 const linePicker = (arr) => {
     let generator = Math.floor(Math.random() * arr.length);
     return arr[generator]
 };
 
-console.log(`Your unhelpful, sarcastic quote of the day is "${linePicker(sarcasticMessageCenter)}"`);
+// Function to compile the 3 data types to make the message
+const goodDayMessage = () => {
+    console.log(`Something you can do to boost your mood and people around you is "${linePicker(helpfulActionCenter)}"`);
+    console.log(`Your helpful, uplifting quote of the day is "${linePicker(happyMessageCenter)}"`);
+    console.log(`Your lucky number to keep an eye out for today is, ${randomNumGen()}`);
+};
 
-console.log(`Your helpful, uplifting quote of the day is "${linePicker(happyMessageCenter)}"`);
+goodDayMessage();
