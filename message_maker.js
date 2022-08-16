@@ -26,7 +26,7 @@ const linePicker = (arr) => {
     return arr[generator]
 };
 
-// Function to compile the 3 data types to make the message
+// Function to compile the 3 data pieces to make the message
 const goodDayMessage = () => {
     console.log(`Something you can do to boost your mood and people around you is "${linePicker(helpfulActionCenter)}"`);
     console.log(`Your helpful, uplifting quote of the day is "${linePicker(happyMessageCenter)}"`);
