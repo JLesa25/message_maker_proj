@@ -1,5 +1,4 @@
 # Message Maker Project!
-## Created by: Jonah Lesa 
 
 In this project **[Codecademy](https://www.codecademy.com)** asked us to use *JavaScript* to create a program that utilizes 3 different sources of data and compiles them into a single message. 
 I decided to take this and turn it into a daily message on how to improve your day! It uses 2 arrays and a single randomly generated number to give a kind action
